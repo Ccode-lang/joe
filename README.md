@@ -3,19 +3,21 @@ Joe is a home assistant.
 
 Joe is built to be highly modular and modable.
 
-# setup
-Windows
+# Setup
+Install python 3 then follow intructions for your platform.
+## Windows
 ```
 pip install SpeechRecognition
 pip install pyttsx3
 pip install pipwin
 pipwin install PyAudio
 ```
-Linux
+## Linux
 ```bash
 # nothing at all
 ```
 
-A home server is under development so that joe can interact with home appliances that are compatable.
-# Info
-current varsion: Mark 1
+# Todo
+- [ ] Make home server
+- [ ] Add more commands
+- [ ] Make devices that are compatible
