@@ -15,7 +15,7 @@ while True:
     if com.startswith("jmsg:"):
         args = com.split(":")
         try:
-            if len(args) < 3 or len(args) > 3:
+            if len(args) == 3:
                 try:
                     device = devicelist[args[2]]
                 except:
