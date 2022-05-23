@@ -12,6 +12,7 @@ import jout
 
 import greeting
 import jterminate
+import jtoggle
 
 serverip = "0.0.0.0"
 pronotfound = False
@@ -29,7 +30,8 @@ def jpass(server):
 prolist = {
     "hello" : greeting.greeting,
     "exit" : jterminate.exit,
-    "pass" : jpass
+    "pass" : jpass,
+    "toggle device" : jtoggle.toggle
 }
 
 while True:
