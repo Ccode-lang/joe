@@ -14,6 +14,6 @@ def toggle(serverip):
     try:
         jout.jout("what device should I contact")
         device = jinput.jinput()
-        internet.sendmsg("jmsg:" + device + ":toggle", serverip, 3501)
+        internet.sendmsg("jmsg:" + "toggle:" + device, serverip, 3501)
     except:
         jout.jout("sorry something went wrong")
