@@ -20,7 +20,10 @@ while True:
                     device = devicelist[args[2]]
                 except:
                     raise InputError("Device does not exist.")
-                server.sendmsg(args[1], device, 3500)
+                try:
+                    server.sendmsg(args[1], device, 3500)
+                except Exception as e:
+                    print(repr(e))
             else:
                 raise InputError("Too many arguments.")
         except InputError as e:
