@@ -13,7 +13,7 @@ pip install pipwin
 pipwin install PyAudio
 cd lib
 ./setup.bat
-mv simpmsg/simpmsg.py .
+move simpmsg/simpmsg.py .
 cd ..
 ```
 ## Linux
