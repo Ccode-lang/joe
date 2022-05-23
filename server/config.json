@@ -1,3 +1,8 @@
 {
-  "test": "0.0.0.0"
+  settings: {
+    "verbose": false
+  },
+  connections: {
+    "test": "0.0.0.0"
+  }
 }
