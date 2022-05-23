@@ -12,7 +12,7 @@ pip install pyttsx3
 pip install pipwin
 pipwin install PyAudio
 cd lib
-setup.bat
+./setup.bat
 cd ..
 ```
 ## Linux
