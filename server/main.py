@@ -1,12 +1,13 @@
 import os
 import simpmsg
+import json
 
 class InputError(Exception):
     pass
 
-devicelist = {
-    "test" : "0.0.0.0"
-}
+with open("config.json") as configdata:
+    config = json.load(configdata)
+    devicelist = config['connections']
 
 server = simpmsg.simpserve()
 server.initserver("0.0.0.0", 3501)
