@@ -2,17 +2,15 @@ import os
 import sys
 import argparse
 home = os.path.expanduser("~")
-prodir = os.path.join(home, "joe", "pro")
-sys.path.append(prodir)
+#prodir = os.path.join(home, "joe", "pro")
+#sys.path.append(prodir)
 prodir = os.path.join(home, "joe", "lib")
 sys.path.append(prodir)
 
 import jinput
 import jout
 
-import greeting
-import jterminate
-import jtoggle
+import commands
 
 serverip = "0.0.0.0"
 pronotfound = False
@@ -27,12 +25,7 @@ if not args["serverip"] == None:
 def jpass(server):
     pass
 
-prolist = {
-    "hello" : greeting.greeting,
-    "exit" : jterminate.exit,
-    "pass" : jpass,
-    "toggle device" : jtoggle.toggle
-}
+prolist = commands.prolist
 
 while True:
     inp = jinput.jinput()
