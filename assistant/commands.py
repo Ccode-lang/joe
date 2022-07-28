@@ -4,8 +4,7 @@ import argparse
 home = os.path.expanduser("~")
 prodir = os.path.join(home, "joe", "pro")
 sys.path.append(prodir)
-prodir = os.path.join(home, "joe", "lib")
-sys.path.append(prodir)
+
 
 import greeting
 import jterminate
