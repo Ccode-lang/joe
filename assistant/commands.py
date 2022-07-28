@@ -1,6 +1,5 @@
 import os
 import sys
-import argparse
 home = os.path.expanduser("~")
 prodir = os.path.join(home, "joe", "pro")
 sys.path.append(prodir)
